@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+::selection {
+  background-color: rgba(129, 140, 248, 0.4);
+  color: #f9fafb;
+}
