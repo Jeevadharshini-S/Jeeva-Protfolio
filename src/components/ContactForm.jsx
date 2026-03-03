@@ -3,10 +3,11 @@ import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { Loader2, Mail } from 'lucide-react'
 import Button from './Button'
+import.meta.env
 
-const SERVICE_ID = 'service_8fu1bxe'
-const TEMPLATE_ID = 'template_oakiqc9'
-const PUBLIC_KEY = 'Tuq9kBeoBj9tGdvCw'
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
 
 const ContactForm = () => {
   const formRef = useRef(null)
